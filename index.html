@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViralGo</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080810;
+      color: white;
+    }
+
+    header {
+      padding: 18px;
+      text-align: center;
+      background: #11111c;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff0b68;
+    }
+
+    .tagline {
+      color: #aaa;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .profile {
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff0b68;
+    }
+
+    .profile h2 {
+      margin-top: 12px;
+    }
+
+    .verified {
+      color: #00aaff;
+    }
+
+    .bio {
+      color: #bbb;
+      margin: 8px 0 18px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin: 20px 0;
+    }
+
+    .stats b {
+      display: block;
+      font-size: 20px;
+    }
+
+    .stats small {
+      color: #999;
+    }
+
+    .follow {
+      background: #ff0b68;
+      color: white;
+      border: none;
+      padding: 12px 45px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .videos {
+      padding: 15px;
+    }
+
+    .videos h3 {
+      margin-bottom: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+    }
+
+    .video {
+      height: 180px;
+      background: #222;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+
+    .video img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 65px;
+      background: #11111c;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-top: 1px solid #333;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    nav a.active {
+      color: #ff0b68;
+    }
+
+    .plus {
+      background: white;
+      color: #111;
+      width: 45px;
+      height: 35px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Viral<span>Go</span></div>
+    <div class="tagline">Be Seen. Be Creative. Go Viral!</div>
+  </header>
+
+  <section class="profile">
+
+    <!-- নিজের ছবির URL এখানে দিতে পারো -->
+    <img src="https://i.pravatar.cc/300" alt="Profile">
+
+    <h2>SANJOY COMDI <span class="verified">✓</span></h2>
+
+    <p class="bio">
+      Founder & Owner of ViralGo 🚀<br>
+      আপনার ভিডিও, আপনার পরিচয়
+    </p>
+
+    <div class="stats">
+      <div>
+        <b>128</b>
+        <small>Following</small>
+      </div>
+
+      <div>
+        <b>25.6K</b>
+        <small>Followers</small>
+      </div>
+
+      <div>
+        <b>455K</b>
+        <small>Likes</small>
+      </div>
+    </div>
+
+    <button class="follow">Follow</button>
+
+  </section>
+
+  <section class="videos">
+
+    <h3>🎬 Videos</h3>
+
+    <div class="grid">
+
+      <div class="video">
+        <img src="https://picsum.photos/300/500?1" alt="Video">
+      </div>
+
+      <div class="video">
+        <img src="https://picsum.photos/300/500?2" alt="Video">
+      </div>
+
+      <div class="video">
+        <img src="https://picsum.photos/300/500?3" alt="Video">
+      </div>
+
+      <div class="video">
+        <img src="https://picsum.photos/300/500?4" alt="Video">
+      </div>
+
+      <div class="video">
+        <img src="https://picsum.photos/300/500?5" alt="Video">
+      </div>
+
+      <div class="video">
+        <img src="https://picsum.photos/300/500?6" alt="Video">
+      </div>
+
+    </div>
+
+  </section>
+
+  <nav>
+    <a href="#" class="active">🏠<br>Home</a>
+    <a href="#">🔍<br>Discover</a>
+
+    <a href="#" class="plus">+</a>
+
+    <a href="#">💬<br>Inbox</a>
+    <a href="#">👤<br>Profile</a>
+  </nav>
+
+</body>
+  </html>
